@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;700;900&display=swap');
 
 :root{
     --cor1: #BB2020 ;
@@ -9,10 +13,13 @@
     --cor5: #121317 ;
     --cor6: #ffffff ;
 
+    --titulo: 'Abril Fatface', cursive;
+    --titulo2: 'Times New Roman', Times, serif;
+    --paragrafos: 'Outfit', sans-serif;
 
 }
 
-body{
+body, header, section, main{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -23,7 +30,17 @@ a{
     text-decoration: none;
 }
 
+h1{
+    font-family: var(--titulo);
+}
 
+h1{
+    font-family: var(--titulo2);
+}
+
+p{
+    font-family: var(--paragrafos);
+}
 
 /* Personalização da barra de rolagem*/
 * {
@@ -85,7 +102,7 @@ nav.menu a{text-decoration: none;}
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 1em;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--titulo2);
 
     border-bottom: 3px solid transparent;
     transition: 0.5s ease-in-out;
@@ -215,6 +232,8 @@ nav.menu a{text-decoration: none;}
 .detalhes h2{
     text-align: center;
     font-size: 2.1em;
+    
+    
 
 }
 
@@ -273,15 +292,63 @@ div.detalhes p > small{
 .info{
     background: var(--cor4);
     margin:0;
-    padding: 0;
+    padding: 10px 0px;
+    
+
 
     width: 100%;
     height: 500px;
     
+    overflow-x: hidden;
+    overflow-Y: hidden;
+}
 
+.info2{
+    background: var(--cor4);
+    margin:auto;
+    padding: 20px;
 
+    max-width: 600px;
+    height: 460px;
 
+    background-color: var(--cor6);
 
 }
+
+.info2 h1{
+    text-align: center;
+    font-size: 2.5em;
+    background-image: linear-gradient(to right, transparent, var(--cor2), transparent);
+    color: var(--cor6);
+
+    
+
+}
+
+.info2 h2{
+    text-align: left;
+    font-size: 1.8em;
+    background-image: linear-gradient(to right,var(--cor3), transparent, transparent);
+    color: var(--cor5);
+    padding-left: 10px;;
+
+}
+
+.info2 p{
+    text-align: left;
+    font-size: 1.1em;
+    color: var(--cor5);
+    padding-left: 10px;
+    text-align: justify;
+
+}
+
+
+
+/* =============================== Info ===============================*/
+
+
+
+
 
 
