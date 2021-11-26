@@ -321,6 +321,7 @@ div.detalhes p > small{
     height: 560px;
 
     background-color: var(--cor6);
+    border-radius: 10px;
 
 }
 
@@ -356,10 +357,99 @@ div.detalhes p > small{
 
 /* =============================== capitulos ===============================*/
 
+
 .capitulos{
+    background-color: var(--cor3);
+    margin:auto;
+    padding: 10px 0px;
     
+
+
+    width: 100%;
+    height: auto;
+    
+    overflow-x: hidden;
+    overflow-Y: hidden;
 }
 
+.capitulos2{
+    background: var(--cor4);
+    margin:auto;
+    padding: 20px;
+
+    max-width: 800px;
+    height: auto;
+
+    background-color: var(--cor6);
+    border-radius: 10px;
+
+}
+.capitulos2 h2#todososcaps{
+    text-align: center;
+    font-size: 2.5em;
+    background-image: linear-gradient(to right, transparent, var(--cor2), transparent);
+    color: var(--cor6);
+
+}
+
+.ler img{
+    max-width: 400px;
+    height: 100%;
+}
+
+.ler{
+    display:grid;
+    grid-template-areas: 'img titulo'
+                         'img resumo';
+    padding:5px;
+    margin:20px;
+    background-color: var(--cor3);
+}
+
+.ler img{
+    grid-area: img;
+    margin-right:5px;
+}
+.ler h2{
+    grid-area: titulo;
+}
+.ler p{
+    grid-area: resumo;
+}
+
+
+@media (max-width: 800px){
+    .ler{
+        display:grid;
+        grid-template-areas: 'img img'
+                             'titulo titulo'
+                             'resumo resumo';
+        padding:20px;
+        margin:20px;
+        background-color: var(--cor3);
+    }
+
+    
+    .ler img{
+        max-width: 100%;
+        height: 100%;
+    }
+
+
+    .ler img{
+        grid-area: img;
+        margin-right:5px;
+    }
+    .ler h2{
+        grid-area: titulo;
+        
+    }
+    .ler p{
+        grid-area: resumo;
+    }
+
+
+}
 
 
 
