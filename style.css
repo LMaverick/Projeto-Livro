@@ -124,8 +124,11 @@ nav.menu a{text-decoration: none;}
 
 }
 
-.capa h1{
-    text-align: center;
+.capa img{
+    width: 300px;
+    height: 428px;
+    display: block;
+    margin-top: 20px;
 
 }
 
