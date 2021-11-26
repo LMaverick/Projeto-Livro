@@ -82,6 +82,7 @@ nav.menu a{text-decoration: none;}
     height: 60px;
     background-image: linear-gradient(to bottom, var(--cor2), transparent);
 
+
     z-index: 100;
 
     
@@ -90,7 +91,7 @@ nav.menu a{text-decoration: none;}
 
 .menu ul{
     display:flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
 
@@ -141,6 +142,8 @@ nav.menu a{text-decoration: none;}
     background-image: url(Imgs/img2.jpg);
     margin:0;
     padding:0;
+
+    padding-top: 15px;
 
 
 
