@@ -74,7 +74,7 @@ nav.menu a{text-decoration: none;}
 
 .header{
     display:flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
     
     position: fixed;
@@ -399,7 +399,7 @@ div.detalhes p > small{
 .capitulos2{
     background: var(--cor4);
     margin:auto;
-    padding: 20px;
+    padding: 20px 0px;
 
     max-width: 800px;
     height: auto;
@@ -483,8 +483,8 @@ div.detalhes p > small{
         grid-template-areas: 'img img'
                              'titulo titulo'
                              'resumo resumo';
-        padding:20px;
-        margin:20px;
+        padding:15px;
+        margin:20px 0px;
         background-color: var(--cor3);
     }
 
