@@ -91,11 +91,11 @@ nav.menu a{text-decoration: none;}
 
 .menu ul{
     display:flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    overflow-x: scroll;
     z-index: 100;
+
 
 
 }
