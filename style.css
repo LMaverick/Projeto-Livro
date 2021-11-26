@@ -22,13 +22,14 @@
 html{ scroll-behavior: smooth; }
 
 
-body, header, section, main{
+body, header, section, main,footer{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     
     
 }
+
 
 a{
     text-decoration: none;
@@ -366,7 +367,7 @@ div.detalhes p > small{
     animation: fundo 10s ease infinite;
 
     margin:auto;
-    padding: 10px 0px;
+    padding: 15px 0px;
     
 
 
@@ -507,7 +508,7 @@ div.detalhes p > small{
     background-repeat: no-repeat;
     background-size: cover;
 
-    margin:auto;
+    margin:0 auto;
     padding: 10px 0px;
     
 
@@ -567,6 +568,50 @@ div.detalhes p > small{
 
 }
 
+.idiomas2 p {
+    text-align: center;
+    font-size: 1.3em;
+}
+
 #img1{grid-area: img1;}
 #img1{grid-area: img2;}
+
+/* =============================== footer ===============================*/
+
+.footer{
+    background: var(--cor2);
+    width: 100%;
+    height: auto;
+    margin:0;
+    padding: 0;
+
+    box-shadow:  0px -2px 2px var(--cor5);
+
+}
+
+.footer2{
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+
+    padding: 0px 20px;
+
+
+}
+
+.footer2 p{
+    color: var(--cor6);
+    text-align: center;
+    transition: .2s ease-in;
+    cursor: pointer;
+
+}
+
+.footer2 p:hover{
+    color: var(--cor1);
+    text-decoration: underline;
+
+}
+
+
 
