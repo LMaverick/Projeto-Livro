@@ -330,6 +330,7 @@ div.detalhes p > small{
     font-size: 2.5em;
     background-image: linear-gradient(to right, transparent, var(--cor2), transparent);
     color: var(--cor6);
+    text-shadow:  1px 0px 5px var(--cor3);
 
     
 
@@ -340,7 +341,8 @@ div.detalhes p > small{
     font-size: 1.8em;
     background-image: linear-gradient(to right,var(--cor3), transparent, transparent);
     color: var(--cor5);
-    padding-left: 10px;;
+    padding-left: 10px;
+    text-shadow:  0px 0px 5px var(--cor6);
 
 }
 
@@ -389,35 +391,67 @@ div.detalhes p > small{
     font-size: 2.5em;
     background-image: linear-gradient(to right, transparent, var(--cor2), transparent);
     color: var(--cor6);
+    text-shadow:  1px 0px 5px var(--cor3);
+
+}
+
+
+.ler{
+    display:grid;
+    grid-template-areas: 'img titulo'
+    'img resumo';
+    padding:5px;
+    margin:20px;
+    background-color: var(--cor3);
+
+    border-radius: 10px;
+    transition: .3s ease-in-out
+
+
+
+
+}
+
+.ler:hover{
+    background-color: var(--cor4);
+    border-radius: 10px;
 
 }
 
 .ler img{
     max-width: 400px;
     height: 100%;
-}
-
-.ler{
-    display:grid;
-    grid-template-areas: 'img titulo'
-                         'img resumo';
-    padding:5px;
-    margin:20px;
-    background-color: var(--cor3);
-}
-
-.ler img{
     grid-area: img;
     margin-right:5px;
+    border-radius: 10px;
+    transition: .4s ease;
+
 }
+
+.ler img:hover{
+    border-radius: 0px;
+    
+}
+
 .ler h2{
     grid-area: titulo;
+    text-align: center;
+    background-image: linear-gradient(to right, transparent, var(--cor6), transparent);
+    font-size: 1.5em;
+    font-family: var(--titulo);
+    font-weight: normal;
+    color:var(--cor5);
+    text-shadow:  1px 0px 5px var(--cor3);
+
+
 }
 .ler p{
     grid-area: resumo;
+    text-align: justify;
+    margin-right: 5px;
 }
 
-
+/*=========================*/
 @media (max-width: 800px){
     .ler{
         display:grid;
@@ -429,27 +463,80 @@ div.detalhes p > small{
         background-color: var(--cor3);
     }
 
-    
     .ler img{
         max-width: 100%;
         height: 100%;
     }
-
-
-    .ler img{
-        grid-area: img;
-        margin-right:5px;
-    }
-    .ler h2{
-        grid-area: titulo;
-        
-    }
-    .ler p{
-        grid-area: resumo;
-    }
-
-
+   
 }
 
 
+/* =============================== Idiomas ===============================*/
+
+
+
+
+.idiomas{
+    background-image: url(Imgs/fundo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin:auto;
+    padding: 10px 0px;
+    
+
+
+    width: 100%;
+    height: auto;
+    
+    overflow-x: hidden;
+    overflow-Y: hidden;
+}
+
+.idiomas2{
+    display:grid;
+    grid-template-areas: ' texto texto'
+                         'img1 img2';
+    grid-gap: 10px;
+
+
+    background: var(--cor4);
+    margin:auto;
+    padding: 20px;
+
+    max-width: 600px;
+    height: auto;
+
+    background-color: var(--cor6);
+    border-radius: 10px;
+
+}
+
+.idiomas2 h2{
+    text-align: center;
+    font-size: 2.5em;
+    background-image: linear-gradient(to right, transparent, var(--cor2), transparent);
+    color: var(--cor6);
+    text-shadow:  1px 0px 5px var(--cor3);
+
+    grid-area: texto;
+
+    
+
+}
+
+.idiomas2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+    margin: 0 auto;
+    cursor: pointer;
+
+}
+
+#img1{grid-area: img1;}
+#img1{grid-area: img2;}
 
