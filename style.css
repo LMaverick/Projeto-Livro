@@ -361,7 +361,10 @@ div.detalhes p > small{
 
 
 .capitulos{
-    background-color: var(--cor3);
+    background: linear-gradient(45deg, var(--cor2), var(--cor3));
+    background-size: 300% 300%;
+    animation: fundo 10s ease infinite;
+
     margin:auto;
     padding: 10px 0px;
     
@@ -372,6 +375,24 @@ div.detalhes p > small{
     
     overflow-x: hidden;
     overflow-Y: hidden;
+}
+
+@keyframes fundo{
+    0%{
+        background-position: 0% 50%;
+
+    }
+
+    50%{
+        background-position: 100% 50%;
+
+    }
+
+    100%{
+        background-position: 0% 50%;
+
+    }
+
 }
 
 .capitulos2{
@@ -403,6 +424,7 @@ div.detalhes p > small{
     padding:5px;
     margin:20px;
     background-color: var(--cor3);
+    cursor: pointer;
 
     border-radius: 10px;
     transition: .3s ease-in-out
@@ -431,6 +453,7 @@ div.detalhes p > small{
 .ler img:hover{
     border-radius: 0px;
     
+    
 }
 
 .ler h2{
@@ -449,6 +472,7 @@ div.detalhes p > small{
     grid-area: resumo;
     text-align: justify;
     margin-right: 5px;
+    color:var(--cor5);
 }
 
 /*=========================*/
