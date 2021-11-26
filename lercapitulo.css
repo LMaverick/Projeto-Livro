@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;700;900&display=swap');
+
+:root{
+    --cor1: #BB2020 ;
+    --cor2: #06111C ;
+    --cor3: #BEC7C7 ;
+    --cor4: #FFEB4D ;
+    --cor5: #050505 ;
+    --cor6: #ffffff ;
+
+    --titulo: 'Abril Fatface', cursive;
+    --titulo2: 'Times New Roman', Times, serif;
+    --paragrafos: 'Outfit', sans-serif;
+
+}
+
+html{ scroll-behavior: smooth; }
+
+
+body, header, section, main{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: var(--titulo);
+}
+
+h1{
+    font-family: var(--titulo2);
+}
+
+p{
+    font-family: var(--paragrafos);
+}
+
+/* Personalização da barra de rolagem*/
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--cor3) var(--cor2);
+  }
+  
+  /* funciona no Chrome, Edge, e Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--cor2);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--cor3);
+    border-radius: 20px;
+    border: 3px solid var(--cor2);
+  }
+
+/* =============================== Header ===============================*/
+li{ list-style: none;}
+nav.menu a{text-decoration: none;}
+
+.header{
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    
+    position: fixed;
+    width:100%;
+    height: 60px;
+    background-image: linear-gradient(to bottom, var(--cor2), transparent);
+
+    z-index: 100;
+
+    
+    
+}
+
+.menu ul{
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+
+    z-index: 100;
+
+
+}
+
+.menu ul > a > li{
+    color: var(--cor6);
+    padding: 0px 10px;
+    margin: 0px 10px;
+
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1em;
+    font-family: var(--titulo2);
+
+    border-bottom: 3px solid transparent;
+    transition: 0.5s ease-in-out;
+
+    z-index: 100;
+
+
+
+}
+
+.menu ul > a > li:hover{
+    border-bottom: 3px solid var(--cor6);
+    color: var(--cor4);
+    font-size: 1.1em;
+
+    z-index: 100;
+
+
+}
+
+
+
+
+
+
+/* ===============================  ===============================*/
