@@ -136,9 +136,31 @@ nav.menu a{text-decoration: none;}
 
     width:100%;
     height: 100%;
-    background-color: var(--cor3);
+    background: linear-gradient(45deg, var(--cor2), var(--cor3));
+    background-size: 300% 300%;
+    animation: fundo 10s ease infinite;
     overflow-x: hidden;
 
+
+}
+
+
+
+@keyframes fundo{
+    0%{
+        background-position: 0% 50%;
+
+    }
+
+    50%{
+        background-position: 100% 50%;
+
+    }
+
+    100%{
+        background-position: 0% 50%;
+
+    }
 
 }
 
