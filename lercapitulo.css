@@ -137,7 +137,7 @@ nav.menu a{text-decoration: none;}
 .central{
 
     width:100%;
-    height: 100vh;
+    height: 100%;
     background-color: var(--cor3);
     overflow-x: hidden;
 
@@ -212,6 +212,15 @@ nav.menu a{text-decoration: none;}
     color: var(--cor5);
     font-size: 1.3em;
 
+}
+
+.cap{
+    display: none;
+} 
+
+
+.cap:target{
+    display: block;
 }
 
 
